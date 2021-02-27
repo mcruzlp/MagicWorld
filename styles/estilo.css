@@ -16,9 +16,9 @@
 	justify-content: space-between;
 }
 
-@media only screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
 	.navbar.responsive {
-		position: relative;
+		display: none;
 	}
 }
 
@@ -47,7 +47,13 @@ a {
 }
 
 /********************** INTRO *****************************/
-
+#hero {
+	position: relative;
+	height: 100vh;
+	background-image: url("../images/hogwarts_ruins.jpg");
+	background-size: cover;
+	background-position: top center;
+}
 /********************** HISTORIA **************************/
 
 /******************** MUNDO MÁGICO ************************/
