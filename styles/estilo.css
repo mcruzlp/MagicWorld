@@ -1,1 +1,90 @@
-/* estilo de la web Mundo Mágico*/
+/**************** FUENTES *******************************/
+
+@font-face {
+	src: url("../fonts/HARRYP__.TTF");
+	font-family: titles;
+}
+
+/******************* BARRA DE NAVEGACIÓN ***********************/
+.navbar {
+	background-color: rgb(68, 4, 77);
+	font-family: titles;
+	font-size: 1.25em;
+}
+
+.navbar .form-inline {
+	justify-content: space-between;
+}
+
+@media only screen and (min-width: 600px) {
+	.navbar.responsive {
+		position: relative;
+	}
+}
+
+/******************* LAYOUT BÁSICO *************************/
+body {
+	background-color: rgb(110, 81, 114);
+	font-family: body;
+}
+
+.fa-arrow-up {
+	/***** flecha para volver al inicio ****/
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	color: rgb(68, 4, 77);
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid rgb(68, 4, 77);
+	z-index: 99;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(68, 4, 77);
+	font-weight: bold;
+}
+
+/********************** INTRO *****************************/
+
+/********************** HISTORIA **************************/
+
+/******************** MUNDO MÁGICO ************************/
+
+/********************* ZONA MUGGLE ************************/
+
+/*********************** MARCAS ***************************/
+
+/*********************** FOOTER ***************************/
+
+footer {
+	font-family: titles;
+	font-size: 1.1em;
+	color: rgb(68, 4, 77);
+	background-color: rgb(110, 81, 114);
+}
+
+footer .fa {
+	padding: 10px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 5px;
+}
+
+.fa:hover {
+	opacity: 0.7;
+	color: rgb(68, 4, 77);
+}
+
+.fa-github {
+	background: darkgray;
+	color: white;
+}
+
+.fa-linkedin {
+	background: #007bb5;
+	color: white;
+}

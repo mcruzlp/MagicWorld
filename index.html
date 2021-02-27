@@ -6,7 +6,11 @@
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- enlace a favicon -->
   <link rel="shortcut icon" href="images/lumos.gif" type="image/x-icon">
+  <!-- enlace a font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- enlace a estilo de bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/estilo.css">
@@ -14,32 +18,105 @@
 </head>
 
 <body>
-
-  <div>
+  <!-- flecha para volver arriba -->
+  <a href="#hero"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+  <div class="container-fluid">
     <!-------------------- NAVBAR ------------------------------>
-    <nav>
-
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+      <a class="navbar-brand" href="#hero">Inicio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#history">Historia</a>
+          </li>
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#world" id="navbardrop" data-toggle="dropdown">
+              Mundo Mágico
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Escuelas de magia</a>
+              <a class="dropdown-item" href="#">Criaturas mágicas</a>
+              <a class="dropdown-item" href="#">Objetos mágicos</a>
+              <a class="dropdown-item" href="#">Hechizos y Pociones</a>
+              <a class="dropdown-item" href="#">Quiddich</a>
+            </div>
+          </li>
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#muggles" id="navbardrop" data-toggle="dropdown">
+              Zona Muggle
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Novedades</a>
+              <a class="dropdown-item" href="#">Dónde comprar</a>
+              <a class="dropdown-item" href="#">Atracciones</a>
+              <a class="dropdown-item" href="#">Foro</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Contacto</a>
+          </li>
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Diccionario Mágico">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+          </form>
+        </ul>
+      </div>
     </nav>
     <!-------------------- INICIO / HERO ----------------------->
-    <section>
+    <section id="hero">
 
     </section>
     <!-------------------- HISTORIA ---------------------------->
-    <section>
+    <section id="history">
 
     </section>
     <!-------------------- EL MUNDO MÁGICO --------------------->
-    <section>
+    <section id="world">
 
     </section>
-    <!-------------------- GALERÍA ----------------------------->
-    <section>
-
+    <!-------------------- DICCIONARIO MÁGICO -------------------------->
+    <section id="dictionary">
     </section>
-    <!-------------------- FOOTER ------------------------------>
-    <footer>
-
+    <!-------------------- ZONA MUGGLE ----------------------------->
+    <section id="muggles">
+    </section>
+    <!-------------------- CONTACTO / FOOTER ---------------------------->
+    <footer id="footer" class="row">
+      <div class="col-sm-4">
+        <h1>Autora de la web:</h1>
+        <p>Cruz López Pérez<br>
+          Estudiante DAM<br>
+          IES Campanillas PTA - Málaga<br>
+          Email: mcruzlp@gmail.com</p>
+      </div>
+      <div class="col-sm-4">
+        <h1>Redes Sociales:</h1>
+        <a href="https://github.com/mcruzlp" target="_blank" class="fa fa-github"></a>
+        <a href="https://www.linkedin.com/in/mcruzlp/" target="_blank" class="fa fa-linkedin"></a>
+      </div>
+      <div class="col-sm-4">
+        <h1>Contenido:</h1>
+        <a href="#hero">Inicio</a><br>
+        <a href="#history">Historia</a><br>
+        <a href="#world">Mundo Mágico</a><br>
+        <a href="#muggles">Zona Muggle</a><br>
+      </div>
     </footer>
+
+    <iframe class="fixed-bottom" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1217772199&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+    <div
+      style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+      <a href="https://soundcloud.com/mcruzlp" title="María Cruz" target="_blank"
+        style="color: #cccccc; text-decoration: none;">María Cruz</a> · <a
+        href="https://soundcloud.com/mcruzlp/sets/harry-potter" title="Harry Potter" target="_blank"
+        style="color: #cccccc; text-decoration: none;">Harry Potter</a>
+    </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -62,33 +139,33 @@
   --barra de navegación
     inicio
     historia
-    mundo mágico
-    galería
-    libros y películas
+    Universo 
+    diccionario
     zona freak
+    contacto (footer)
+    barra de búsqueda
 
   --historia
-  separar por libros
+    separar por libros
     escenas
     personajes
 
-  --barra de búsqueda
-
-  --galería
-    escenas
-    wallpapers
-
-  --merchandising
-    mina lima
-    king cross
-    primark
-
-  --atracciones
-    warner bros londres
-    the wizaring world of harry potter (Orlando, Florida, USA)
-
   -mundo magico
-    criaturas (humanos, magos, duendes, etc) <i class="fas fa-cat"></i>
+    --localizaciones
+    hogwarts
+    gringotts
+    diagon alley
+    anden 9 3/4
+    bosque prohibido
+    godric hollow
+    privet drive
+
+    --hogwarts
+    casas
+    asignaturas
+    cursos
+
+    --criaturas (humanos, magos, duendes, etc) <i class="fas fa-cat"></i>
     <i class="fas fa-alicorn"></i>
     <i class="fal fa-dragon"></i>
     <i class="fas fa-bat"></i>
@@ -102,32 +179,24 @@
     objetos mágicos <i class="fas fa-magic"></i>
     monedas
 
-  --novedades sobre HP
-
   --diccionario mágico
 
-  -localizaciones
-    hogwarts
-    gringotts
-    diagon alley
-    anden 9 3/4
-    bosque prohibido
-    godric hollow
-    privet drive
 
-  --hogwarts
-    casas
-    asignaturas
-    cursos
-
-  --peliculas y libros
-  personajes principales y secundarios
-  banda sonora
-  saga HP
-  saga animales fantásticos
-  ediciones libros
-
-
+  --zona freak (zona muggle)
+    --merchandising
+      mina lima
+      king cross
+      primark
+    --atracciones
+      warner bros londres
+      the wizaring world of harry potter (Orlando, Florida, USA)
+    --peliculas y libros
+      personajes principales y secundarios
+      banda sonora
+      saga HP
+      saga animales fantásticos
+      ediciones libros
+    --novedades sobre HP
 
 
 -->
