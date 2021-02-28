@@ -5,11 +5,16 @@
 	font-family: titles;
 }
 
+@font-face {
+	src: url("../fonts/4PrivetDrive-Español.ttf");
+	font-family: body;
+}
+
 /******************* BARRA DE NAVEGACIÓN ***********************/
 .navbar {
 	background-color: rgb(68, 4, 77);
 	font-family: titles;
-	font-size: 1.25em;
+	font-size: 1.5em;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -30,6 +35,19 @@ a {
 	font-weight: bold;
 }
 
+a:hover {
+	color: orangered;
+}
+
+.btn {
+	background-color: orangered;
+	color: white;
+}
+
+.btn:hover {
+	color: rgb(68, 4, 77);
+}
+
 /********************** INTRO *****************************/
 .jumbotron {
 	background-image: url("../images/hogwarts_ruins.jpg");
@@ -40,11 +58,9 @@ a {
 
 #jumbotron-text {
 	background-color: rgb(110, 81, 114);
-	opacity: 0.6;
-}
-
-.bg-opacity-dark {
-	background-color: rgb(68, 4, 77);
+	background-position: bottom;
+	color: rgb(68, 4, 77);
+	opacity: 0.8;
 }
 
 /********************** HISTORIA **************************/
@@ -59,7 +75,7 @@ a {
 
 footer {
 	font-family: titles;
-	font-size: 1.1em;
+	font-size: 1.25em;
 	color: rgb(68, 4, 77);
 	background-color: rgb(110, 81, 114);
 }
