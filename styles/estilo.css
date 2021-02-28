@@ -12,11 +12,7 @@
 	font-size: 1.25em;
 }
 
-.navbar .form-inline {
-	justify-content: space-between;
-}
-
-@media screen and (min-width: 800px) {
+@media only screen and (min-width: 1024px) {
 	.navbar.responsive {
 		display: none;
 	}
@@ -28,18 +24,6 @@ body {
 	font-family: body;
 }
 
-.fa-arrow-up {
-	/***** flecha para volver al inicio ****/
-	position: fixed;
-	bottom: 30px;
-	right: 30px;
-	color: rgb(68, 4, 77);
-	padding: 10px;
-	border-radius: 5px;
-	border: 1px solid rgb(68, 4, 77);
-	z-index: 99;
-}
-
 a {
 	text-decoration: none;
 	color: rgb(68, 4, 77);
@@ -47,13 +31,22 @@ a {
 }
 
 /********************** INTRO *****************************/
-#hero {
-	position: relative;
-	height: 100vh;
+.jumbotron {
 	background-image: url("../images/hogwarts_ruins.jpg");
 	background-size: cover;
 	background-position: top center;
+	height: 100vh;
 }
+
+#jumbotron-text {
+	background-color: rgb(110, 81, 114);
+	opacity: 0.6;
+}
+
+.bg-opacity-dark {
+	background-color: rgb(68, 4, 77);
+}
+
 /********************** HISTORIA **************************/
 
 /******************** MUNDO MÁGICO ************************/

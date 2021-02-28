@@ -18,139 +18,132 @@
 </head>
 
 <body>
-  <!-- flecha para volver arriba -->
-  <a href="#hero"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
-  <div class="container">
-    <!-------------------- NAVBAR ------------------------------>
-    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
-      <a class="navbar-brand" href="#hero">Inicio</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav">
-          <!-- Dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#history" id="navbardrop" data-toggle="dropdown">
-              Historia
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#stone">Harry Potter y la piedra filosofal</a>
-              <a class="dropdown-item" href="#secrets">Harry Potter y la cámara secreta</a>
-              <a class="dropdown-item" href="#prisoner">Harry Potter y el prisionero de Azkaban</a>
-              <a class="dropdown-item" href="#goblet">Harry Potter y el cáliz de fuego</a>
-              <a class="dropdown-item" href="#fenix">Harry Potter y la Orden del Fénix</a>
-              <a class="dropdown-item" href="#prince">Harry Potter y el principe mestizo</a>
-              <a class="dropdown-item" href="#hallows">Harry Potter y las reliquias de la Muerte</a>
-            </div>
-          </li>
-          <!-- Dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#world" id="navbardrop" data-toggle="dropdown">
-              Mundo Mágico
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Escuelas de magia</a>
-              <a class="dropdown-item" href="#">Criaturas mágicas</a>
-              <a class="dropdown-item" href="#">Objetos mágicos</a>
-              <a class="dropdown-item" href="#">Hechizos y Pociones</a>
-              <a class="dropdown-item" href="#">Quiddich</a>
-            </div>
-          </li>
-          <!-- Dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#muggles" id="navbardrop" data-toggle="dropdown">
-              Zona Muggle
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Novedades</a>
-              <a class="dropdown-item" href="#">Dónde comprar</a>
-              <a class="dropdown-item" href="#">Atracciones</a>
-              <a class="dropdown-item" href="#">Foro</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#footer">Contacto</a>
-          </li>
-          <form class="form-inline">
+  <!-------------------- NAVBAR ------------------------------>
+  <nav class="navbar navbar-expand-sm navbar-dark sticky-top justify-content-between">
+    <div>
+      <!-- Reproductor de SoundCloud -->
+      <iframe class="p-1" width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1217772199&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+      <div
+        style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+      </div>
+    </div>
+    <a class="navbar-brand" href="#hero">Inicio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#history">Historia</a>
+        </li>
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#world" id="navbardrop" data-toggle="dropdown">
+            Mundo Mágico
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#schools">Escuelas de magia</a>
+            <a class="dropdown-item" href="#beast">Criaturas mágicas</a>
+            <a class="dropdown-item" href="#objects">Objetos mágicos</a>
+            <a class="dropdown-item" href="#charms">Hechizos y Pociones</a>
+            <a class="dropdown-item" href="#quiddich">Quiddich</a>
+          </div>
+        </li>
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#muggles" id="navbardrop" data-toggle="dropdown">
+            Zona Muggle
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#news">Novedades</a>
+            <a class="dropdown-item" href="#where">Dónde comprar</a>
+            <a class="dropdown-item" href="#parks">Parques temáticos</a>
+            <a class="dropdown-item" href="#chat">Foro</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#footer">Contacto</a>
+        </li>
+        <form class="form-inline">
+          <div>
             <input class="form-control mr-sm-2" type="search" placeholder="Diccionario Mágico">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-          </form>
-        </ul>
-      </div>
-    </nav>
-    <!-------------------- INICIO / HERO ----------------------->
-    <section id="hero">
-      <div>
-        <h1>Bienvenido al Mundo Mágico de Harry Potter</h1>
-      </div>
-    </section>
-    <!-------------------- HISTORIA ---------------------------->
-    <section id="history">
-      <div id="stone">
-
-      </div>
-      <div id="secrets">
-
-      </div>
-      <div id="prisoner">
-
-      </div>
-      <div id="goblet">
-
-      </div>
-      <div id="fenix">
-
-      </div>
-      <div id="prince">
-
-      </div>
-      <div id="hallows">
-
-      </div>
-    </section>
-    <!-------------------- EL MUNDO MÁGICO --------------------->
-    <section id="world">
-
-    </section>
-    <!-------------------- DICCIONARIO MÁGICO -------------------------->
-    <section id="dictionary">
-    </section>
-    <!-------------------- ZONA MUGGLE ----------------------------->
-    <section id="muggles">
-    </section>
-    <!-------------------- CONTACTO / FOOTER ---------------------------->
-    <footer id="footer" class="row">
-      <div class="col-sm-4">
-        <h1>Autora de la web:</h1>
-        <p>Cruz López Pérez<br>
-          Estudiante DAM<br>
-          IES Campanillas PTA - Málaga<br>
-          Email: mcruzlp@gmail.com</p>
-      </div>
-      <div class="col-sm-4">
-        <h1>Redes Sociales:</h1>
-        <a href="https://github.com/mcruzlp" target="_blank" class="fa fa-github"></a>
-        <a href="https://www.linkedin.com/in/mcruzlp/" target="_blank" class="fa fa-linkedin"></a>
-      </div>
-      <div class="col-sm-4">
-        <h1>Contenido:</h1>
-        <a href="#hero">Inicio</a><br>
-        <a href="#history">Historia</a><br>
-        <a href="#world">Mundo Mágico</a><br>
-        <a href="#muggles">Zona Muggle</a><br>
-      </div>
-    </footer>
-
-    <iframe class="fixed-bottom" width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay"
-      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1217772199&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-    <div
-      style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-      <a href="https://soundcloud.com/mcruzlp" title="María Cruz" target="_blank"
-        style="color: #cccccc; text-decoration: none;">María Cruz</a> · <a
-        href="https://soundcloud.com/mcruzlp/sets/harry-potter" title="Harry Potter" target="_blank"
-        style="color: #cccccc; text-decoration: none;">Harry Potter</a>
+          </div>
+        </form>
+      </ul>
     </div>
+  </nav>
+  <!-------------------- INICIO / HERO ----------------------->
+  <section id="hero">
+    <div class="jumbotron">
+      <div id="jumbotron-text" class="p-5 position-relative">
+        <h1 class="display-4">Bienvenid@ al mundo mágico de Harry Potter</h1>
+        <p class="lead">Esta es una página web no oficial creada por y para los fans de la saga.</p>
+        <hr class="my-4">
+        <p>Puedes consultar la web como invidat@, pero si quieres guardar tus búsquedas y preferencias, puedes
+          registrarte como usuari@.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Registro</a>
+      </div>
+
+    </div>
+  </section>
+  <!-------------------- HISTORIA ---------------------------->
+  <section id="history">
+    <div id="stone">
+
+    </div>
+    <div id="secrets">
+
+    </div>
+    <div id="prisoner">
+
+    </div>
+    <div id="goblet">
+
+    </div>
+    <div id="fenix">
+
+    </div>
+    <div id="prince">
+
+    </div>
+    <div id="hallows">
+
+    </div>
+  </section>
+  <!-------------------- EL MUNDO MÁGICO --------------------->
+  <section id="world">
+
+  </section>
+  <!-------------------- DICCIONARIO MÁGICO -------------------------->
+  <section id="dictionary">
+  </section>
+  <!-------------------- ZONA MUGGLE ----------------------------->
+  <section id="muggles">
+  </section>
+  <!-------------------- CONTACTO / FOOTER ---------------------------->
+  <footer id="footer" class="row">
+    <div class="col-sm-4">
+      <h1>Autora de la web:</h1>
+      <p>Cruz López Pérez<br>
+        Estudiante DAM<br>
+        IES Campanillas PTA - Málaga<br>
+        Email: mcruzlp@gmail.com</p>
+    </div>
+    <div class="col-sm-4">
+      <h1>Redes Sociales:</h1>
+      <a href="https://github.com/mcruzlp" target="_blank" class="fa fa-github"></a>
+      <a href="https://www.linkedin.com/in/mcruzlp/" target="_blank" class="fa fa-linkedin"></a>
+    </div>
+    <div class="col-sm-4">
+      <h1>Contenido:</h1>
+      <a href="#hero">Inicio</a><br>
+      <a href="#history">Historia</a><br>
+      <a href="#world">Mundo Mágico</a><br>
+      <a href="#muggles">Zona Muggle</a><br>
+    </div>
+  </footer>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
