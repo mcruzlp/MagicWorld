@@ -16,9 +16,25 @@
 	font-family: titles;
 	font-size: 1.5em;
 }
+.navbar-brand {
+	padding: 5px;
+}
 
-@media only screen and (min-width: 1024px) {
-	.navbar.responsive {
+.nav-item {
+	padding: 5px;
+}
+
+#playlist {
+	max-width: 576px;
+	min-width: max-content;
+}
+
+.form-inline {
+	position: right;
+}
+
+@media screen and (min-width: 1200px) {
+	.navbar-toggler-icon {
 		display: none;
 	}
 }
@@ -64,6 +80,10 @@ a:hover {
 }
 
 /********************** HISTORIA **************************/
+
+.card {
+	box-shadow: 5px 10px 8px rgb(143, 115, 146);
+}
 
 /******************** MUNDO MÁGICO ************************/
 

@@ -18,141 +18,218 @@
 </head>
 
 <body>
-  <!-------------------- NAVBAR ------------------------------>
-  <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
-    <a class="navbar-brand" href="#hero">Inicio</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#history">Historia</a>
-        </li>
-        <!-- Dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#world" id="navbardrop" data-toggle="dropdown">
-            Mundo Mágico
-          </a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#schools">Escuelas de magia</a>
-            <a class="dropdown-item" href="#beast">Criaturas mágicas</a>
-            <a class="dropdown-item" href="#objects">Objetos mágicos</a>
-            <a class="dropdown-item" href="#charms">Hechizos y Pociones</a>
-            <a class="dropdown-item" href="#quiddich">Quiddich</a>
-          </div>
-        </li>
-        <!-- Dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#muggles" id="navbardrop" data-toggle="dropdown">
-            Zona Muggle
-          </a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#news">Novedades</a>
-            <a class="dropdown-item" href="#where">Dónde comprar</a>
-            <a class="dropdown-item" href="#parks">Parques temáticos</a>
-            <a class="dropdown-item" href="#chat">Foro</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#footer">Contacto</a>
-        </li>
-        <form class="form-inline">
-          <div>
-            <input class="form-control mr-sm-2" type="search" placeholder="Diccionario Mágico">
+  <div id="wrapper" class="container-fluid">
+    <!-------------------- NAVBAR 1------------------------------>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <div class="navbar-collapse p-2" id="playlist">
+        <!-- Reproductor de SoundCloud -->
+        <iframe width="100%" height="100" scrolling="no" frameborder="no"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1199295601&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true"></iframe>
+      </div>
+      <div>
+
+      </div>
+    </nav>
+    <!-------------------- NAVBAR 2------------------------------>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <!--Botón de inicio-->
+      <a class="navbar-brand" href="#hero">Inicio</a>
+      <!--Botón hamburguesa-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--Menús de la barra de navegación-->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#history">Historia</a>
+          </li>
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#world" id="navbardrop" data-toggle="dropdown">
+              Mundo Mágico
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#schools">Escuelas de magia</a>
+              <a class="dropdown-item" href="#beast">Criaturas mágicas</a>
+              <a class="dropdown-item" href="#objects">Objetos mágicos</a>
+              <a class="dropdown-item" href="#charms">Hechizos y Pociones</a>
+              <a class="dropdown-item" href="#quiddich">Quiddich</a>
+            </div>
+          </li>
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#muggles" id="navbardrop" data-toggle="dropdown">
+              Zona Muggle
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#news">Novedades</a>
+              <a class="dropdown-item" href="#where">Dónde comprar</a>
+              <a class="dropdown-item" href="#parks">Parques temáticos</a>
+              <a class="dropdown-item" href="#chat">Foro</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Contacto</a>
+          </li>
+        </ul>
+        <form class="form-inline float-right">
+          <div class="nav-item">
+            <input class="form-control" type="search" placeholder="Diccionario Mágico">
             <button class="btn my-2 my-sm-0" type="submit">Buscar</button>
           </div>
         </form>
-      </ul>
-    </div>
-  </nav>
-  <!-------------------- INICIO / HERO ----------------------->
-  <section id="hero">
-    <div class="jumbotron">
-      <div id="jumbotron-text" class="p-5 position-relative">
-        <h1 class="display-4">Bienvenid@ al mundo mágico de Harry Potter</h1>
-        <p class="lead">Esta es una página web no oficial creada por y para los fans de la saga.</p>
-        <hr class="my-4">
-        <p>Puedes consultar la web como invidat@, pero si quieres guardar tus búsquedas y preferencias, puedes
-          registrarte como usuari@.</p>
-        <a class="btn btn-lg" href="#" role="button">Registro</a>
       </div>
-    </div>
-  </section>
-  <!-------------------- HISTORIA ---------------------------->
-  <section id="history">
-    <div id="stone">
+    </nav>
+    <!-------------------- INICIO / HERO ----------------------->
+    <section id="hero">
+      <div class="jumbotron">
+        <div id="jumbotron-text" class="p-5 position-relative">
+          <h1 class="display-4">Bienvenid@ al mundo mágico de Harry Potter</h1>
+          <p class="lead">Esta es una página web no oficial creada por y para los fans de la saga.</p>
+          <hr class="my-4">
+          <p>Puedes consultar la web como invidat@, pero si quieres guardar tus búsquedas y preferencias, puedes
+            registrarte como usuari@.</p>
+          <a class="btn btn-lg" href="#" role="button">Registro</a>
+        </div>
+      </div>
+    </section>
+    <!-------------------- HISTORIA ---------------------------->
+    <section class="container" id="history">
+      <div class="row">
+        <div class="col-sm-3 p-3" id="stone">
+          <div class="card" style="width: 18rem;">
+            <img src="images/HP1.jpg" class="card-img-top" alt="HP1">
+            <div class="card-body">
+              <h5 class="card-title">Harry Potter y la piedra filosofal</h5>
+              <p class="card-text">Harry Potter crece en la casa de sus tíos, los Dursley, quienes le ocultan su
+                verdadera historia familiar...</p>
+              <a href="#hp1stone.html" class="btn">Seguir leyendo</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 p-3" id="secrets">
+          <div class="card" style="width: 18rem;">
+            <img src="images/HP2.jpg" class="card-img-top" alt="HP2">
+            <div class="card-body">
+              <h5 class="card-title">Harry Potter y la cámara secreta</h5>
+              <p class="card-text">Tras el primer curso de Harry en Hogwarts, este regresa al hogar de sus tíos Vernon y
+                Petunia Dursley para pasar el verano allí...</p>
+              <a href="#" class="btn">Seguir leyendo</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 p-3" id="prisoner">
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+              <a href="#" class="btn">Seguir leyendo</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 p-3" id="goblet">
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+              <a href="#" class="btn">Seguir leyendo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 p-3" id="fenix">
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+              <a href="#" class="btn">Seguir leyendo</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 p-3" id="prince">
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+              <a href="#" class="btn">Seguir leyendo</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4" id="hallows">
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-------------------- EL MUNDO MÁGICO --------------------->
+    <section id="world">
+      <div id="schools">
 
-    </div>
-    <div id="secrets">
+      </div>
 
-    </div>
-    <div id="prisoner">
+      <div id="beast">
 
-    </div>
-    <div id="goblet">
+      </div>
+      <div id="objects">
 
-    </div>
-    <div id="fenix">
+      </div>
+      <div id="charms">
 
-    </div>
-    <div id="prince">
+      </div>
+      <div id="quiddich">
 
-    </div>
-    <div id="hallows">
-
-    </div>
-  </section>
-  <!-------------------- EL MUNDO MÁGICO --------------------->
-  <section id="world">
-    <div id="schools">
-
-    </div>
-
-    <div id="beast">
-
-    </div>
-    <div id="objects">
-
-    </div>
-    <div id="charms">
-
-    </div>
-    <div id="quiddich">
-
-    </div>
-  </section>
-  <!-------------------- DICCIONARIO MÁGICO -------------------------->
-  <section id="dictionary">
-  </section>
-  <!-------------------- ZONA MUGGLE ----------------------------->
-  <section id="muggles">
-  </section>
-  <!-------------------- CONTACTO / FOOTER ---------------------------->
-  <footer id="footer" class="p-5 row">
-    <div class="col-sm-4">
-      <h1>Autora de la web:</h1>
-      <p>Cruz López Pérez<br>
-        Estudiante DAM<br>
-        IES Campanillas PTA - Málaga<br>
-        Email: mcruzlp@gmail.com</p>
-    </div>
-    <div class="col-sm-4">
-      <h1>Redes Sociales:</h1>
-      <a href="https://github.com/mcruzlp" target="_blank" class="fa fa-github"></a>
-      <a href="https://www.linkedin.com/in/mcruzlp/" target="_blank" class="fa fa-linkedin"></a>
-      <!-- Reproductor de SoundCloud -->
-      <iframe width="100" height="90" frameborder="no"
-        src="https://www.youtube.com/embed/videoseries?list=PLL0Eo2ERrUJUGlMtVAyhrVo3KIU-u6Z45"></iframe>
-    </div>
-    <div class="col-sm-4">
-      <h1>Contenido:</h1>
-      <a href="#hero">Inicio</a><br>
-      <a href="#history">Historia</a><br>
-      <a href="#world">Mundo Mágico</a><br>
-      <a href="#muggles">Zona Muggle</a><br>
-    </div>
-  </footer>
+      </div>
+    </section>
+    <!-------------------- DICCIONARIO MÁGICO -------------------------->
+    <section id="dictionary">
+    </section>
+    <!-------------------- ZONA MUGGLE ----------------------------->
+    <section id="muggles">
+    </section>
+    <!-------------------- CONTACTO / FOOTER ---------------------------->
+    <footer id="footer" class="p-5 row">
+      <div class="col-sm-4">
+        <h1>Autora de la web:</h1>
+        <p>Cruz López Pérez<br>
+          Estudiante DAM<br>
+          IES Campanillas PTA - Málaga<br>
+          Email: mcruzlp@gmail.com</p>
+      </div>
+      <div class="col-sm-4">
+        <h1>Redes Sociales:</h1>
+        <a href="https://github.com/mcruzlp" target="_blank" class="fa fa-github"></a>
+        <a href="https://www.linkedin.com/in/mcruzlp/" target="_blank" class="fa fa-linkedin"></a>
+      </div>
+      <div class="col-sm-4">
+        <h1>Contenido:</h1>
+        <a href="#hero">Inicio</a><br>
+        <a href="#history">Historia</a><br>
+        <a href="#world">Mundo Mágico</a><br>
+        <a href="#muggles">Zona Muggle</a><br>
+      </div>
+    </footer>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
