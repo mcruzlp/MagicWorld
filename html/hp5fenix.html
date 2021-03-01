@@ -1,3 +1,4 @@
+<!--Harry Potter y la Orden del Fénix-->
 <!DOCTYPE html>
 <html lang="es">
 
@@ -13,20 +14,14 @@
   <!-- enlace a estilo de bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  <!-- enlace a mi estilo -->
   <link rel="stylesheet" href="styles/estilo.css">
-  <!-- enlace a smooth scroll-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <!-- enlace a js -->
-  <script src="javascripts/funciones.js"></script>
   <title>Mundo Mágico</title>
-
 </head>
 
 <body>
   <div id="wrapper" class="container-fluid">
     <!-------------------- NAVBAR ------------------------------>
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="navbar-collapse p-2" id="playlist">
         <!-- Reproductor de SoundCloud -->
         <iframe width="100%" height="100" scrolling="no" frameborder="no"
@@ -42,7 +37,7 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#history">Historia</a>
+            <a class="nav-link" onclick=”window.location.href=’hp1stone.html'”>Historia</a>
           </li>
           <!-- Dropdown -->
           <li class="nav-item dropdown">
@@ -69,8 +64,11 @@
               <a class="dropdown-item" href="#chat">Foro</a>
             </div>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Contacto</a>
+          </li>
         </ul>
-        <form class="form-inline">
+        <form class="form-inline float-right">
           <div class="nav-item">
             <input class="form-control" type="search" placeholder="Diccionario Mágico">
             <button class="btn my-2 my-sm-0" type="submit">Buscar</button>
@@ -87,7 +85,7 @@
           <hr class="my-4">
           <p>Si quieres contarnos tu experiencia en la web o ves algún error, contácta con nosotros a través de este
             formulario:</p>
-          <a class="btn btn-lg" onclick="window.location.href='html/contacto.html'" role="button">Contacta</a>
+          <a class="btn btn-lg" href="#contacto.html`" role="button">Contacta</a>
         </div>
       </div>
     </section>
@@ -98,44 +96,28 @@
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img role="button" onclick="window.location.href='html/hp1stone.html'" src="images/HP1.jpg"
-              class="d-block w-100" alt="HP1">
+            <img src="..." class="d-block w-100" alt="HP1">
           </div>
           <div class="carousel-item">
-            <img role="button" onclick="window.location.href='html/hp2secrets.html'" src="images/HP2.jpg"
-              class="d-block w-100" alt="HP2">
+            <img src="..." class="d-block w-100" alt="HP2">
           </div>
           <div class="carousel-item">
-            <img role="button" onclick="window.location.href='html/hp3prisoner.html'" src="images/HP3.jpg"
-              class="d-block w-100" alt="HP3">
+            <img src="..." class="d-block w-100" alt="HP3">
           </div>
-          <div class="carousel-item">
-            <img role="button" onclick="window.location.href='html/hp4goblet.html'" src="images/HP4.jpg"
-              class="d-block w-100" alt="HP4">
+          <div class="carousel-item active">
+            <img src="..." class="d-block w-100" alt="HP4">
           </div>
-          <div class="carousel-item">
-            <img role="button" onclick="window.location.href='html/hp5fenix.html'" src="images/HP5.jpg"
-              class="d-block w-100" alt="HP5">
+          <div class="carousel-item active">
+            <img src="..." class="d-block w-100" alt="HP5">
           </div>
-          <div class="carousel-item">
-            <img role="button" onclick="window.location.href='html/hp6prince.html'" src="images/HP6.jpg"
-              class="d-block w-100" alt="HP6">
+          <div class="carousel-item active">
+            <img src="..." class="d-block w-100" alt="HP6">
           </div>
-          <div class="carousel-item">
-            <img role="button" onclick="window.location.href='html/hp7hallow.html'" src="images/HP7_1.jpg"
-              class="d-block w-100" alt="HP7_1">
-          </div>
-          <div class="carousel-item">
-            <img role="button" onclick="window.location.href='html/hp7hallow.html'" src="images/HP7_2.jpg"
-              class="d-block w-100" alt="HP7_2">
+          <div class="carousel-item active">
+            <img src="..." class="d-block w-100" alt="HP7">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -237,76 +219,7 @@
     </section>
     <!-------------------- EL MUNDO MÁGICO --------------------->
     <section id="world">
-      <div class="card-columns">
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title that wraps to a new line</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-              content.
-              This content is a little bit longer.</p>
-          </div>
-        </div>
-        <div class="card p-3">
-          <blockquote class="blockquote mb-0 card-body">
-            <p>A well-known quote, contained in a blockquote element.</p>
-            <footer class="blockquote-footer">
-              <small class="text-muted">
-                Someone famous in <cite title="Source Title">Source Title</cite>
-              </small>
-            </footer>
-          </blockquote>
-        </div>
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card bg-primary text-white text-center p-3">
-          <blockquote class="blockquote mb-0">
-            <p>A well-known quote, contained in a blockquote element.</p>
-            <footer class="blockquote-footer text-white">
-              <small>
-                Someone famous in <cite title="Source Title">Source Title</cite>
-              </small>
-            </footer>
-          </blockquote>
-        </div>
-        <div class="card text-center">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="..." class="card-img" alt="...">
-        </div>
-        <div class="card p-3 text-right">
-          <blockquote class="blockquote mb-0">
-            <p>A well-known quote, contained in a blockquote element.</p>
-            <footer class="blockquote-footer">
-              <small class="text-muted">
-                Someone famous in <cite title="Source Title">Source Title</cite>
-              </small>
-            </footer>
-          </blockquote>
-        </div>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is another card with title and supporting text below. This card has some
-              additional
-              content to make it slightly taller overall.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>
       <div id="schools">
-
 
       </div>
 
@@ -329,8 +242,7 @@
     <!-------------------- ZONA MUGGLE ----------------------------->
     <section id="muggles">
     </section>
-    <!-------------------- FOOTER ---------------------------->
-    <hr>
+    <!-------------------- CONTACTO / FOOTER ---------------------------->
     <footer id="footer" class="p-5 row">
       <div class="col-sm-4">
         <h1>Autora de la web:</h1>
@@ -345,12 +257,11 @@
         <a href="https://www.linkedin.com/in/mcruzlp/" target="_blank" class="fa fa-linkedin"></a>
       </div>
       <div class="col-sm-4">
-        <h1>Dónde estamos:</h1>
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1743.3101468918073!2d-4.555426594989655!3d36.74068740245444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f1d06d8246c9%3A0xb6dccfba3e65a1f2!2sFP%20IES%20Campanillas%20PTA!5e0!3m2!1ses!2ses!4v1614624550113!5m2!1ses!2ses"
-            width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
+        <h1>Contenido:</h1>
+        <a href="#hero">Inicio</a><br>
+        <a href="#history">Historia</a><br>
+        <a href="#world">Mundo Mágico</a><br>
+        <a href="#muggles">Zona Muggle</a><br>
       </div>
     </footer>
   </div>
@@ -368,71 +279,3 @@
 </body>
 
 </html>
-
-<!--
-  cosas que puedo añadir a la web
-
-  --barra de navegación
-    inicio
-    historia
-    Universo 
-    diccionario
-    zona freak
-    contacto (footer)
-    barra de búsqueda
-
-  --historia
-    separar por libros
-    escenas
-    personajes
-
-  -mundo magico
-    --localizaciones
-    hogwarts
-    gringotts
-    diagon alley
-    anden 9 3/4
-    bosque prohibido
-    godric hollow
-    privet drive
-
-    --hogwarts
-    casas
-    asignaturas
-    cursos
-
-    --criaturas (humanos, magos, duendes, etc) <i class="fas fa-cat"></i>
-    <i class="fas fa-alicorn"></i>
-    <i class="fal fa-dragon"></i>
-    <i class="fas fa-bat"></i>
-    <i class="fas fa-crow"></i>
-    <i class="fas fa-spider"></i>
-    <i class="fas fa-snake"></i>
-    <i class="fas fa-dragon"></i>
-    <i class="fas fa-ghost"></i>
-    quiddich <i class="fas fa-quidditch"></i>
-    hechizos
-    objetos mágicos <i class="fas fa-magic"></i>
-    monedas
-
-  --diccionario mágico
-
-
-  --zona freak (zona muggle)
-    --merchandising
-      mina lima
-      king cross
-      primark
-    --atracciones
-      warner bros londres
-      the wizaring world of harry potter (Orlando, Florida, USA)
-    --peliculas y libros
-      personajes principales y secundarios
-      banda sonora
-      saga HP
-      saga animales fantásticos
-      ediciones libros
-    --novedades sobre HP
-
-
--->

@@ -1,0 +1,253 @@
+<!-------------- Formulario de contacto ------------------->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- enlace a favicon -->
+  <link rel="shortcut icon" href="../images/Favicon/harry-potter.png" type="image/x-icon">
+  <!-- enlace a font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- enlace a estilo de bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!-- enlace a mi estilo -->
+  <link rel="stylesheet" href="../styles/estilo.css">
+  <!-- enlace a js -->
+  <script src="../js/javascript.js"></script>
+  <title>Mundo Mágico</title>
+</head>
+
+<body>
+  <div id="wrapper" class="container-fluid">
+    <!-------------------- NAVBAR ------------------------------>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <div class="navbar-collapse p-2" id="playlist">
+        <!-- Reproductor de SoundCloud -->
+        <iframe width="100%" height="100" scrolling="no" frameborder="no"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1199295601&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true"></iframe>
+      </div>
+      <!--Botón de inicio-->
+      <a class="navbar-brand" href="../index.html#hero">Inicio</a>
+      <!--Botón hamburguesa-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--Menús de la barra de navegación-->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html#history">Historia</a>
+          </li>
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="../index.html#world" id="navbardrop" data-toggle="dropdown">
+              Mundo Mágico
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#schools">Escuelas de magia</a>
+              <a class="dropdown-item" href="#beast">Criaturas mágicas</a>
+              <a class="dropdown-item" href="#objects">Objetos mágicos</a>
+              <a class="dropdown-item" href="#charms">Hechizos y Pociones</a>
+              <a class="dropdown-item" href="#quiddich">Quiddich</a>
+            </div>
+          </li>
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="../index.html#muggles" id="navbardrop" data-toggle="dropdown">
+              Zona Muggle
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#news">Novedades</a>
+              <a class="dropdown-item" href="#where">Dónde comprar</a>
+              <a class="dropdown-item" href="#parks">Parques temáticos</a>
+              <a class="dropdown-item" href="#chat">Foro</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline float-right">
+          <div class="nav-item">
+            <input class="form-control" type="search" placeholder="Diccionario Mágico">
+            <button class="btn my-2 my-sm-0" type="submit">Buscar</button>
+          </div>
+        </form>
+      </div>
+    </nav>
+    <!-------------------- CONTACTA ---------------------------->
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Email</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputName">Nombre</label>
+          <input type="text" class="form-control" id="inputName">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputAddress">Tipo y nombre de vía</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="C/Alcalá">
+      </div>
+      <div class="form-group">
+        <label for="inputAddress2">Número, bloque, planta, puerta...</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="26, Bloque 3, 1º A">
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputCity">Ciudad</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputState">Provincia</label>
+          <input type="text" class="form-control" id="inputState">
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputZip">CP</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            He leído y acepto la <a data-toggle="modal" data-target="#myModal1" class="tooltip-test"
+              title="politica de privacidad">política de privacidad</a>.
+          </label>
+        </div>
+        <!-- The Modal -->
+        <div class="modal" id="myModal1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h1 class="modal-title">Política de privacidad</h1>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                <h3>Some text to enable scrolling..</h3>
+                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  velit
+                  esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                  culpa qui
+                  officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut
+                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                  ut
+                  aliquip ex ea commodo consequat.</p>
+                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  velit
+                  esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                  culpa qui
+                  officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut
+                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                  ut
+                  aliquip ex ea commodo consequat.</p>
+
+                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  velit
+                  esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                  culpa qui
+                  officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut
+                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                  ut
+                  aliquip ex ea commodo consequat.</p>
+              </div>
+
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn" data-toggle="modal" data-target="#myModal2">Enviar</button>
+      <!-- The Modal -->
+      <div class="modal" id="myModal2">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h1 class="modal-title">Formulario de contacto</h1>
+              <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <h3>¡Gracias por contactar con nosotros!</h3>
+              <p>Su consulta ha sido enviada.
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button onclick="window.location.href='../index.html#hero'" type="button" class="btn"
+                data-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <!-------------------- FOOTER ---------------------------->
+    <hr>
+    <footer id="footer" class="p-5 row">
+      <div class="col-sm-4">
+        <h1>Autora de la web:</h1>
+        <p>Cruz López Pérez<br>
+          Estudiante DAM<br>
+          IES Campanillas PTA - Málaga<br>
+          Email: mcruzlp@gmail.com</p>
+      </div>
+      <div class="col-sm-4">
+        <h1>Redes Sociales:</h1>
+        <a href="https://github.com/mcruzlp" target="_blank" class="fa fa-github"></a>
+        <a href="https://www.linkedin.com/in/mcruzlp/" target="_blank" class="fa fa-linkedin"></a>
+      </div>
+      <div class="col-sm-4">
+        <h1>Dónde estamos:</h1>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1743.3101468918073!2d-4.555426594989655!3d36.74068740245444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f1d06d8246c9%3A0xb6dccfba3e65a1f2!2sFP%20IES%20Campanillas%20PTA!5e0!3m2!1ses!2ses!4v1614624550113!5m2!1ses!2ses"
+            width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

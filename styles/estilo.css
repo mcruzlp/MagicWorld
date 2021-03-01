@@ -64,12 +64,16 @@ a:hover {
 	color: rgb(68, 4, 77);
 }
 
+hr {
+	background-color: rgb(68, 4, 77);
+}
+
 /********************** INTRO *****************************/
 .jumbotron {
 	background-image: url("../images/hogwarts_ruins.jpg");
 	background-size: cover;
 	background-position: top center;
-	height: 100vh;
+	height: 100%;
 }
 
 #jumbotron-text {
@@ -81,11 +85,22 @@ a:hover {
 
 /********************** HISTORIA **************************/
 
+/******************** MUNDO MÁGICO ************************/
+#world {
+	background-image: url(../images/fondo1.jpg);
+}
 .card {
 	box-shadow: 5px 10px 8px rgb(143, 115, 146);
 }
 
-/******************** MUNDO MÁGICO ************************/
+.card-columns {
+	@include media-breakpoint-only(lg) {
+		column-count: 4;
+	}
+	@include media-breakpoint-only(xl) {
+		column-count: 5;
+	}
+}
 
 /********************* ZONA MUGGLE ************************/
 
