@@ -15,10 +15,6 @@
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <!-- enlace a mi estilo -->
   <link rel="stylesheet" href="styles/estilo.css">
-  <!-- enlace a smooth scroll-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <!-- enlace a js -->
-  <script src="javascripts/funciones.js"></script>
   <title>Mundo Mágico</title>
 
 </head>
@@ -79,7 +75,7 @@
       </div>
     </nav>
     <!-------------------- INICIO / HERO ----------------------->
-    <section id="hero">
+    <section id="hero" class="container-fluid">
       <div class="jumbotron">
         <div id="jumbotron-text" class="p-5">
           <h1 class="display-4">Bienvenid@ al mundo mágico de Harry Potter</h1>
@@ -92,7 +88,7 @@
       </div>
     </section>
     <!-------------------- HISTORIA ---------------------------->
-    <section class="container" id="history">
+    <section id="history" class="container my-2">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -236,7 +232,7 @@
       </div>-->
     </section>
     <!-------------------- EL MUNDO MÁGICO --------------------->
-    <section id="world">
+    <section id="world" class="container-fluid">
       <div class="card-columns">
         <div class="card">
           <img src="..." class="card-img-top" alt="...">
@@ -324,14 +320,14 @@
       </div>
     </section>
     <!-------------------- DICCIONARIO MÁGICO -------------------------->
-    <section id="dictionary">
+    <section id="dictionary" class="container-fluid">
     </section>
     <!-------------------- ZONA MUGGLE ----------------------------->
-    <section id="muggles">
+    <section id="muggles" class="container-fluid">
     </section>
     <!-------------------- FOOTER ---------------------------->
     <hr>
-    <footer id="footer" class="p-5 row">
+    <footer id="footer" class="container-fluid p-5 row">
       <div class="col-sm-4">
         <h1>Autora de la web:</h1>
         <p>Cruz López Pérez<br>
@@ -355,6 +351,11 @@
     </footer>
   </div>
 
+  <!-- enlace a smooth scroll-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- enlace a js -->
+  <script src="javascripts/funciones.js"></script>
+  <!-- enlace al js de Boostrap -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
