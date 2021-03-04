@@ -79,11 +79,24 @@ hr {
 #jumbotron-text {
 	background-color: rgb(110, 81, 114);
 	background-position: bottom;
+	border-radius: 5px;
 	color: rgb(68, 4, 77);
 	opacity: 0.8;
 }
 
+/***************** DICCIONARIO MÁGICO *********************/
+
+.table {
+	background-color: white;
+	color: rgb(68, 4, 77);
+}
+
 /********************** HISTORIA **************************/
+
+#history {
+	background-color: rgb(68, 4, 77);
+	color: white;
+}
 
 /******************** MUNDO MÁGICO ************************/
 #world {
