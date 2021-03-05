@@ -100,10 +100,12 @@ hr {
 
 /******************** MUNDO MÁGICO ************************/
 #world {
-	background-image: url(../images/fondo1.jpg);
+	background-color: rgb(68, 4, 77);
 }
 .card {
-	box-shadow: 5px 10px 8px rgb(143, 115, 146);
+	box-shadow: 3px 3px 8px white;
+	background-color: rgb(143, 115, 146);
+	color: rgb(68, 4, 77);
 }
 
 .card-columns {
