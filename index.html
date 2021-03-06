@@ -40,28 +40,38 @@
           <li class="nav-item">
             <a class="nav-link" href="#history">Historia</a>
           </li>
-          <!-- Dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#world" id="navbardrop" data-toggle="dropdown">Mundo Mágico</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="html/world.html#beast">Criaturas mágicas</a>
-              <a class="dropdown-item" href="html/world.html#objects">Objetos mágicos</a>
-              <a class="dropdown-item" href="html/world.html#charms">Pociones, hechizos y encantamientos</a>
-              <a class="dropdown-item" href="html/world.html#quiddich">Quiddich</a>
-              <a class="dropdown-item" href="html/world.html#schools">Escuelas de magia</a>
-            </div>
+          <!-- Dropdown mundo mágico -->
+          <li class="nav-item btn-group">
+            <a class="nav-link" href="#world">Mundo Mágico</button>
+              <a class="nav-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#world">Mundo Mágico</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="html/world.html#beast">Criaturas mágicas</a>
+                  <a class="dropdown-item" href="html/world.html#objects">Objetos mágicos</a>
+                  <a class="dropdown-item" href="html/world.html#charms">Pociones, hechizos y encantamientos</a>
+                  <a class="dropdown-item" href="html/world.html#quiddich">Quiddich</a>
+                  <a class="dropdown-item" href="html/world.html#schools">Escuelas de magia</a>
+                </div>
           </li>
-          <!-- Dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#muggles" id="navbardrop" data-toggle="dropdown">
-              Zona Muggle
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="html/muggle.html#news">Novedades</a>
-              <a class="dropdown-item" href="html/muggle.html#where">Dónde comprar</a>
-              <a class="dropdown-item" href="html/muggle.html#parks">Parques temáticos</a>
-              <a class="dropdown-item" href="html/muggle.html#chat">Foro</a>
-            </div>
+          <!-- Dropdown zona muggle -->
+          <li class="nav-item btn-group">
+            <a class="nav-link" href="#muggles">Zona Muggle</button>
+              <a class="nav-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#muggles">Zona Muggle</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="html/muggle.html#news">Novedades</a>
+                  <a class="dropdown-item" href="html/muggle.html#where">Dónde comprar</a>
+                  <a class="dropdown-item" href="html/muggle.html#parks">Parques temáticos</a>
+                  <a class="dropdown-item" href="html/muggle.html#chat">Foro</a>
+                </div>
           </li>
         </ul>
         <form class="form-inline">
@@ -231,29 +241,29 @@
     </section>
     <!-------------------- ZONA MUGGLE ----------------------------->
     <section id="muggles">
-      <div class="row container">
-        <div id="news" class="col-3">
+      <div class="row">
+        <div id="news" class="col-3 container">
           <img src="images/Muggle/news1.jpg" alt="news" class="image" role="button"
             onclick="window.location.href='html/muggle.html#news'">
           <div class="overlay overlay1">
             <div class="text">Noticias</div>
           </div>
         </div>
-        <div id="where" class="col-3">
+        <div id="where" class="col-3 container">
           <img src="images/Muggle/where1.jpg" alt="where" class="image" role="button"
             onclick="window.location.href='html/muggle.html#where'">
           <div class="overlay overlay2">
             <div class="text">Merchandising</div>
           </div>
         </div>
-        <div id="parks" class="col-3">
+        <div id="parks" class="col-3 container">
           <img src="images/Muggle/parks1.jpg" alt="parks" class="image" role="button"
             onclick="window.location.href='html/muggle.html#parks'">
           <div class="overlay overlay3">
             <div class="text">Lugares que visitar</div>
           </div>
         </div>
-        <div id="chat" class="col-3">
+        <div id="chat" class="col-3 container">
           <img src="images/Muggle/foro1.jpg" alt="chat" class="image" role="button"
             onclick="window.location.href='html/muggle.html#chat'">
           <div class="overlay overlay3">
@@ -262,8 +272,8 @@
         </div>
       </div>
     </section>
-    <hr>
     <!-------------------- FOOTER ---------------------------->
+    <hr>
     <footer id="footer" class="container-fluid row">
       <div class="col-sm-4">
         <h1>Autora de la web:</h1>
