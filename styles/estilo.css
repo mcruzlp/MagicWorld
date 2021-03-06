@@ -109,51 +109,50 @@ hr {
 	color: rgb(68, 4, 77);
 }
 
-.card-columns {
+/*.card-columns {
 	@include media-breakpoint-only(lg) {
 		column-count: 4;
 	}
 	@include media-breakpoint-only(xl) {
 		column-count: 5;
 	}
-}
+}*/
 
 /********************* ZONA MUGGLE ************************/
-.muggles {
-	.image {
-		display: block;
-		width: 100%;
-		height: auto;
-	}
 
-	.overlay {
-		position: absolute;
-		bottom: 0;
-		left: 100%;
-		right: 0;
-		background-color: rgb(68, 4, 77);
-		overflow: hidden;
-		width: 0;
-		height: 100%;
-		transition: 0.5s ease;
-	}
+#muggles img {
+	display: block;
+	height: 500px;
+	width: max-content;
+}
 
-	.container:hover .overlay {
-		width: 100%;
-		left: 0;
-	}
+#muggles .overlay {
+	position: absolute;
+	bottom: 0;
+	left: 100%;
+	right: 0;
+	background-color: rgb(68, 4, 77);
+	overflow: hidden;
+	width: 0;
+	height: 100%;
+	transition: 0.5s ease;
+}
 
-	.text {
-		color: white;
-		font-size: 20px;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		-webkit-transform: translate(-50%, -50%);
-		-ms-transform: translate(-50%, -50%);
-		transform: translate(-50%, -50%);
-		white-space: nowrap;
-	}
+#muggles .container:hover {
+	width: 100%;
+	left: 0;
+}
+
+#muggles .text {
+	color: orangered;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	white-space: nowrap;
 }
 
 /*********************** FOOTER ***************************/
