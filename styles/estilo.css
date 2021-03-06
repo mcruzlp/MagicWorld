@@ -70,7 +70,7 @@ hr {
 
 /********************** INTRO *****************************/
 .jumbotron {
-	background-image: url("../images/hogwarts_ruins.jpg");
+	background-image: url("../images/Other/hogwarts_ruins.jpg");
 	border-radius: 0;
 	background-size: cover;
 	background-position: top center;
@@ -119,84 +119,41 @@ hr {
 }
 
 /********************* ZONA MUGGLE ************************/
+.muggles {
+	.image {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
 
-#fan.container {
-	position: relative;
-	width: 50%;
-}
+	.overlay {
+		position: absolute;
+		bottom: 0;
+		left: 100%;
+		right: 0;
+		background-color: rgb(68, 4, 77);
+		overflow: hidden;
+		width: 0;
+		height: 100%;
+		transition: 0.5s ease;
+	}
 
-#fan.image {
-	display: block;
-	width: 100%;
-	height: auto;
-}
+	.container:hover .overlay {
+		width: 100%;
+		left: 0;
+	}
 
-#fan.overlay {
-	position: absolute;
-	bottom: 0;
-	left: 100%;
-	right: 0;
-	background-color: #008cba;
-	overflow: hidden;
-	width: 0;
-	height: 100%;
-	transition: 0.5s ease;
-}
-
-#fan.container:hover .overlay {
-	width: 100%;
-	left: 0;
-}
-
-#fan.text {
-	color: white;
-	font-size: 20px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	white-space: nowrap;
-}
-
-#official.container {
-	position: relative;
-	width: 50%;
-}
-
-#official.image {
-	display: block;
-	width: 100%;
-	height: auto;
-}
-
-#official.overlay {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: #008cba;
-	overflow: hidden;
-	width: 0;
-	height: 100%;
-	transition: 0.5s ease;
-}
-
-#official.container:hover .overlay {
-	width: 100%;
-}
-
-#official.text {
-	color: white;
-	font-size: 20px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	white-space: nowrap;
+	.text {
+		color: white;
+		font-size: 20px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		white-space: nowrap;
+	}
 }
 
 /*********************** FOOTER ***************************/
