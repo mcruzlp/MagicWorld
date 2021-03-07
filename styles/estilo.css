@@ -113,7 +113,8 @@ hr {
 /********************* ZONA MUGGLE ************************/
 
 #muggles img {
-	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
 #muggles .overlay {
