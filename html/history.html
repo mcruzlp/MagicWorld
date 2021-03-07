@@ -22,7 +22,7 @@
 </head>
 
 <body>
-  <div id="wrapper" class="container-fluid">
+  <div id="wrapper">
     <!-------------------- NAVBAR ------------------------------>
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
       <div class="navbar-collapse p-2" id="playlist">
@@ -31,7 +31,7 @@
           src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1199295601&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true"></iframe>
       </div>
       <!--Botón de inicio-->
-      <a class="navbar-brand" href="../index.html#hero">Inicio</a>
+      <a class="navbar-brand" href="#hero">Inicio</a>
       <!--Botón hamburguesa-->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
@@ -40,38 +40,48 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="../index.html#history">Historia</a>
+            <a class="nav-link" href="#history">Historia</a>
           </li>
-          <!-- Dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="../index.html#world" id="navbardrop" data-toggle="dropdown">
-              Mundo Mágico
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#schools">Escuelas de magia</a>
-              <a class="dropdown-item" href="#beast">Criaturas mágicas</a>
-              <a class="dropdown-item" href="#objects">Objetos mágicos</a>
-              <a class="dropdown-item" href="#charms">Hechizos y Pociones</a>
-              <a class="dropdown-item" href="#quiddich">Quiddich</a>
-            </div>
+          <!-- Dropdown mundo mágico -->
+          <li class="nav-item btn-group">
+            <a class="nav-link" href="#world">Mundo Mágico</button>
+              <a class="nav-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#world">Mundo Mágico</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="html/world.html#beast" target="_blank">Criaturas mágicas</a>
+                  <a class="dropdown-item" href="html/world.html#objects" target="_blank">Objetos mágicos</a>
+                  <a class="dropdown-item" href="html/world.html#charms" target="_blank">Pociones, hechizos y
+                    encantamientos</a>
+                  <a class="dropdown-item" href="html/world.html#quiddich" target="_blank">Quiddich</a>
+                  <a class="dropdown-item" href="html/world.html#schools" target="_blank">Escuelas de magia</a>
+                </div>
           </li>
-          <!-- Dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="../index.html#muggles" id="navbardrop" data-toggle="dropdown">
-              Zona Muggle
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#news">Novedades</a>
-              <a class="dropdown-item" href="#where">Dónde comprar</a>
-              <a class="dropdown-item" href="#parks">Parques temáticos</a>
-              <a class="dropdown-item" href="#chat">Foro</a>
-            </div>
+          <!-- Dropdown zona muggle -->
+          <li class="nav-item btn-group">
+            <a class="nav-link" href="#muggles">Zona Muggle</button>
+              <a class="nav-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#muggles">Zona Muggle</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="html/muggle.html#news" target="_blank">Novedades</a>
+                  <a class="dropdown-item" href="html/muggle.html#where" target="_blank">Dónde comprar</a>
+                  <a class="dropdown-item" href="html/muggle.html#parks" target="_blank">Parques temáticos</a>
+                  <a class="dropdown-item" href="html/muggle.html#chat" target="_blank">Foro</a>
+                </div>
           </li>
         </ul>
-        <form class="form-inline float-right">
+        <form class="form-inline">
           <div class="nav-item">
             <input class="form-control" type="search" placeholder="Diccionario Mágico">
-            <button class="btn my-2 my-sm-0" type="submit">Buscar</button>
+            <button class="btn my-2 my-sm-0" onclick="window.location.href='html/diccionario.html'" target="_blank"
+              type="button">Buscar</button>
           </div>
         </form>
       </div>
@@ -247,7 +257,7 @@
       </div>
     </section>
     <!-------------------- FOOTER ---------------------------->
-    <footer id="footer" class="p-5 row">
+    <footer id="footer" class="container-fluid row">
       <div class="col-sm-4">
         <h1>Autora de la web:</h1>
         <p>Cruz López Pérez<br>
@@ -265,12 +275,16 @@
         <div class="embed-responsive embed-responsive-16by9">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1743.3101468918073!2d-4.555426594989655!3d36.74068740245444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f1d06d8246c9%3A0xb6dccfba3e65a1f2!2sFP%20IES%20Campanillas%20PTA!5e0!3m2!1ses!2ses!4v1614624550113!5m2!1ses!2ses"
-            width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            width="800" height="400" style="border:0;" allowfullscreen="no" loading="lazy"></iframe>
         </div>
       </div>
     </footer>
   </div>
-
+  <!-- enlace a smooth scroll-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- enlace a js -->
+  <script src="javascripts/funciones.js"></script>
+  <!-- enlace al js de Boostrap -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>

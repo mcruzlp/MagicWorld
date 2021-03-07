@@ -22,7 +22,7 @@
 </head>
 
 <body>
-  <div id="wrapper" class="container-fluid">
+  <div id="wrapper">
     <!-------------------- NAVBAR ------------------------------>
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
       <div class="navbar-collapse p-2" id="playlist">
@@ -31,7 +31,7 @@
           src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1199295601&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true"></iframe>
       </div>
       <!--Botón de inicio-->
-      <a class="navbar-brand" href="../index.html#hero">Inicio</a>
+      <a class="navbar-brand" href="#hero">Inicio</a>
       <!--Botón hamburguesa-->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
@@ -40,98 +40,63 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="../index.html#history">Historia</a>
+            <a class="nav-link" href="#history">Historia</a>
           </li>
-          <!-- Dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="../index.html#world" id="navbardrop" data-toggle="dropdown">
-              Mundo Mágico
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#schools">Escuelas de magia</a>
-              <a class="dropdown-item" href="#beast">Criaturas mágicas</a>
-              <a class="dropdown-item" href="#objects">Objetos mágicos</a>
-              <a class="dropdown-item" href="#charms">Hechizos y Pociones</a>
-              <a class="dropdown-item" href="#quiddich">Quiddich</a>
-            </div>
+          <!-- Dropdown mundo mágico -->
+          <li class="nav-item btn-group">
+            <a class="nav-link" href="#world">Mundo Mágico</button>
+              <a class="nav-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#world">Mundo Mágico</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="html/world.html#beast" target="_blank">Criaturas mágicas</a>
+                  <a class="dropdown-item" href="html/world.html#objects" target="_blank">Objetos mágicos</a>
+                  <a class="dropdown-item" href="html/world.html#charms" target="_blank">Pociones, hechizos y
+                    encantamientos</a>
+                  <a class="dropdown-item" href="html/world.html#quiddich" target="_blank">Quiddich</a>
+                  <a class="dropdown-item" href="html/world.html#schools" target="_blank">Escuelas de magia</a>
+                </div>
           </li>
-          <!-- Dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="../index.html#muggles" id="navbardrop" data-toggle="dropdown">
-              Zona Muggle
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#news">Novedades</a>
-              <a class="dropdown-item" href="#where">Dónde comprar</a>
-              <a class="dropdown-item" href="#parks">Parques temáticos</a>
-              <a class="dropdown-item" href="#chat">Foro</a>
-            </div>
+          <!-- Dropdown zona muggle -->
+          <li class="nav-item btn-group">
+            <a class="nav-link" href="#muggles">Zona Muggle</button>
+              <a class="nav-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#muggles">Zona Muggle</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="html/muggle.html#news" target="_blank">Novedades</a>
+                  <a class="dropdown-item" href="html/muggle.html#where" target="_blank">Dónde comprar</a>
+                  <a class="dropdown-item" href="html/muggle.html#parks" target="_blank">Parques temáticos</a>
+                  <a class="dropdown-item" href="html/muggle.html#chat" target="_blank">Foro</a>
+                </div>
           </li>
         </ul>
-        <form class="form-inline float-right">
+        <form class="form-inline">
           <div class="nav-item">
             <input class="form-control" type="search" placeholder="Diccionario Mágico">
-            <button class="btn my-2 my-sm-0" type="submit">Buscar</button>
+            <button class="btn my-2 my-sm-0" onclick="window.location.href='html/diccionario.html'" target="_blank"
+              type="button">Buscar</button>
           </div>
         </form>
       </div>
     </nav>
-    <!-------------------- HP2 ---------------------------->
+    <!-------------------- WORLD ---------------------------->
     <section id="beast">
       <div>
-        <p>
-          Harry Potter crece en la casa de sus tíos, los Dursley, quienes le ocultan su verdadera historia familiar. Al
-          cumplir Harry once años de edad, empiezan a llegarle cartas de remitente desconocido, que van aumentando en
-          número
-          a medida que sus tíos no dejan que las abra. Las mismas traen la noticia de que el niño ha sido admitido en el
-          Colegio Hogwarts de Magia y Hechicería, ya que, al igual que sus padres, es mago. El Colegio Hogwarts es el
-          principal escenario donde suceden los hechos de la serie de novelas.</p>
-        <p>
-          Se descubre entonces que los Potter no murieron en un accidente de coche como se le había dicho a Harry, sino
-          que
-          habían sido asesinados en la noche de Halloween por un hechicero tenebroso conocido como lord Voldemort, quien
-          había aterrorizado a la comunidad mágica británica años atrás. Sin embargo, algo ocurrió esa noche: Voldemort
-          consiguió matar al matrimonio Potter pero no pudo asesinar al bebé, perdió su cuerpo y le dejó al niño una
-          cicatriz permanente en forma de rayo en su frente.</p>
-        <p>
-          Rubeus Hagrid aparece para llevarse a Harry una noche, cuando los Dursley intentan impedir que parta rumbo al
-          colegio. Más tarde, el hombre ayuda a Harry a comprar sus materiales escolares en el callejón Diagon y allí
-          este
-          descubre que es famoso entre los magos por haber sobrevivido al intento de homicidio. Posteriormente, el
-          muchacho
-          toma el tren que lo lleva a Hogwarts y allí conoce a Ron Weasley, un chico pelirrojo hijo de magos, y a
-          Hermione
-          Granger, una jovencita de origen muggle con altas aspiraciones académicas.</p>
-        <p>
-          Los tres se hacen amigos y más tarde, durante su año escolar, se ven envueltos en una serie de episodios
-          relacionados con un objeto escondido en las profundidades del edificio: la piedra filosofal, un artefacto con
-          el
-          poder de transmutar los metales en oro y producir el elixir de la vida eterna. Diferentes hechos les hacen
-          suponer
-          que uno de sus profesores, Severus Snape, desea conseguir la piedra para entregársela a Voldemort, con quien
-          el
-          docente estaría confabulado.</p>
-        <p>
-          Tras confirmar que el espíritu de aquel brujo tenebroso ronda el castillo y que la piedra se encuentra en
-          peligro,
-          Harry, Ron y Hermione alertan a los profesores, pero estos desestiman esa posibilidad, ya que el objeto se
-          halla
-          protegido por diversas trampas en una cámara subterránea en el colegio. Los tres niños solos, entonces,
-          atraviesan
-          la puerta trampa custodiada por un perro de tres cabezas y se ven sometidos a diferentes pruebas hasta llegar
-          a la
-          recámara donde se encuentra la piedra.</p>
-        <p>
-          Harry descubre que el profesor Quirinus Quirrell era quien intentaba robarla desde el principio, puesto que
-          Voldemort —que permanecía como parásito en la nuca del profesor— se lo había ordenado. Harry consigue la
-          piedra y
-          Quirrel intenta asesinarlo, pero no logra sobrevivir al contacto con el muchacho y muere cuando Voldemort
-          abandona
-          su cuerpo.</p>
-        <p>
-          Después de una charla reveladora con el director del instituto, Albus Dumbledore, Harry se reencuentra con sus
-          amigos y parte de regreso a la casa de sus tíos, ya que el año lectivo ha concluido.
-        </p>
+        <p>Tras el primer curso de Harry en Hogwarts, este regresa al hogar de sus tíos Vernon y Petunia Dursley para
+          pasar
+          el verano allí. Un día, en la habitación de Harry aparece un ser conocido como «elfo doméstico» llamado Dobby,
+          quien le advierte que no debe asistir a su segundo curso del colegio puesto que «estará en peligro mortal»;
+          sin
+          embargo, Harry hace caso omiso a las palabras del elfo. Después de esto, Ron Weasley, y sus hermanos Fred y
+          George
+          llegan a su casa en un coche volador, escapando con Harry.</p>
       </div>
     </section>
     <section id="objects">
@@ -144,100 +109,46 @@
           embargo, Harry hace caso omiso a las palabras del elfo. Después de esto, Ron Weasley, y sus hermanos Fred y
           George
           llegan a su casa en un coche volador, escapando con Harry.</p>
-        <p>Poco después del comienzo en su segundo año en Hogwarts, Harry empieza a escuchar unas voces en las paredes
-          del
-          castillo que solo él es capaz de oír y aparecen mensajes en las paredes de los pasillos que revelan que la
-          mítica
-          Cámara de los secretos se ha abierto de nuevo y que el «heredero de Slytherin» matará a todos los alumnos
-          cuyos
-          padres no tengan sangre mágica —entre ellos, Hermione—. Después de esto, varios habitantes de la escuela son
-          encontrados petrificados en los pasillos. Mientras tanto, Harry, Ron, y Hermione descubren a Myrtle la
-          llorona, el
-          fantasma de una chica que fue asesinada la última ocasión en que la Cámara se abrió, y cuya guarida es el
-          inodoro
-          del baño de mujeres donde ella murió. Myrtle le muestra a Harry un diario que lleva el nombre de «Tom Marvolo
-          Riddle». A pesar de que sus páginas estaban en blanco, responde cuando Harry escribe en él. Finalmente el
-          libro le
-          muestra los hechos sucedidos en Hogwarts cincuenta años antes, cuando la Cámara de los Secretos se abrió; ahí
-          observa a Tom Riddle, un alumno en aquel momento, culpando por abrir la Cámara a Rubeus Hagrid, quien entonces
-          tenía trece años de edad y ya se había dedicado a cuidar peligrosas criaturas mágicas como mascotas.</p>
-        <p>Cuatro meses después, el diario es misteriosamente robado y, poco después, Hermione sufre la petrificación.
-          No
-          obstante, Harry y Ron descubren en su mano una nota con información sobre el basilisco, un monstruo en forma
-          de
-          serpiente cuya mirada mata a quienes lo miran directamente a los ojos, pero solo petrifica a quienes lo miran
-          por
-          medio de una superficie reflectante, como el agua o un espejo. Analizando los hechos y la información
-          registrada,
-          todo encaja. La razón por la que Harry era el único que podía escuchar las voces previas a los ataques es que
-          él
-          es capaz de hablar pársel, la lengua de las serpientes. Además, la serpiente es el emblema de Slytherin. En la
-          nota, Hermione concluye que dicho monstruo viaja a través de las tuberías de la escuela. Mientras los ataques
-          continúan, Cornelius Fudge, el Ministro de Magia, retiene a Hagrid y lo envía a la prisión de los magos como
-          precaución. Lucius Malfoy, un antiguo partidario de Voldemort que afirma haberse reformado, anuncia que el
-          consejo
-          escolar ha suspendido a Dumbledore de su cargo de director. En la novela, las lágrimas de un fénix contienen
-          propiedades curativas.</p>
-        <p>Después de que la hermana menor de Ron, Ginny, sea llevada a la Cámara, el personal de la escuela insiste en
-          que
-          el profesor de Defensa contra las Artes Oscuras, Gilderoy Lockhart, debe controlar la situación; sin embargo,
-          cuando Harry y Ron entran a su oficina con el fin de decirle que han descubierto algo acerca del basilisco,
-          Lockhart revela que es un fraude y que toma crédito por los triunfos de otros y amenaza con borrar la memoria
-          de
-          los chicos. Desarmando a Lockhart, lo dirigen hacia el baño de Myrtle la llorona, donde Harry descubre una
-          entrada
-          que se dirige a la Cámara secreta. En las alcantarillas de la escuela, Lockhart coge la varita mágica de Ron e
-          intenta de nuevo borrar la memoriade los chicos, pero la varita de Ron había sido dañada en un accidente al
-          comienzo del año escolar, por lo que el hechizo falla. Como resultado, Lockhart sufre una amnesia total, una
-          parte
-          del túnel es destruida y Harry queda separado de Ron y Lockhart.</p>
-        <p>Mientras Ron trata de hacer un túnel a través de los escombros, Harry entra a la Cámara secreta, donde Ginny
-          se
-          encuentra desmayada al lado del diario. Mientras Harry la examina, Tom Riddle aparece, con el mismo rostro y
-          cuerpo que Harry había visto en el diario, y explica que es una memoria almacenada en el diario. Ginny
-          escribió en
-          él explicando sus esperanzas y miedos de adolescencia, y Riddle se ganó su confianza por aparentar ser
-          simpático,
-          poseyéndola y usándola para poder abrir la Cámara. Riddle revela también que es Voldemort de adolescente.
-          Revela
-          después que cuando Ginny descubrió que era la responsable de los ataques sucedidos en el colegio, trató de
-          lanzar
-          el diario en el baño, lo cual explica la manera en que entró en posesión de Harry. Riddle libera al basilisco
-          para
-          matar a Harry. La mascota de Dumbledore, el fénix Fawkes, lleva a Harry el Sombrero Seleccionador del que
-          aparece
-          una magnífica espada, perteneciente al fundador de la casa Gryffindor. Harry usa la espada para aniquilar a la
-          criatura, poco después de haber sido mordido por los colmillos venenosos de la criatura, de los cuales uno se
-          rompe; por ello, Fawkes cura al chico con sus lágrimas. Harry apuñala el diario con el colmillo roto y Riddle
-          grita y desaparece. Después de que Ginny despierta, Fawkes lleva a los cuatro fuera del túnel.</p>
-        <p>Harry cuenta la historia completa a Dumbledore, quien ha vuelto a ocupar el cargo de director. Este revoca la
-          amenaza de expulsar a los alumnos si no respetan las normas y les entrega premios especiales por sus servicios
-          a
-          la escuela. Cuando Harry menciona sus miedos, semejantes a los de Tom Riddle, Dumbledore le responde que Harry
-          escogió la casa de Gryffindor y que solo un verdadero miembro de dicha casa pudo haber utilizado la espada de
-          Godric Gryffindor para matar al basilisco. Lucius Malfoy se pone furioso y Harry le acusa de haber colocado el
-          diario en uno de los libros de Ginny mientras todos los alumnos compraban sus libros escolares en el Callejón
-          Diagon antes de comenzar el curso; Malfoy responde «Pruébalo». Finalmente, todas las víctimas de petrificación
-          causada por el basilisco son revividas por una poción de mandrágora, cuya preparación tomó varios meses.</p>
       </div>
     </section>
     <section id="charms">
       <div>
-
+        <p>Tras el primer curso de Harry en Hogwarts, este regresa al hogar de sus tíos Vernon y Petunia Dursley para
+          pasar
+          el verano allí. Un día, en la habitación de Harry aparece un ser conocido como «elfo doméstico» llamado Dobby,
+          quien le advierte que no debe asistir a su segundo curso del colegio puesto que «estará en peligro mortal»;
+          sin
+          embargo, Harry hace caso omiso a las palabras del elfo. Después de esto, Ron Weasley, y sus hermanos Fred y
+          George
+          llegan a su casa en un coche volador, escapando con Harry.</p>
       </div>
     </section>
     <section id="schools">
       <div>
-
+        <p>Tras el primer curso de Harry en Hogwarts, este regresa al hogar de sus tíos Vernon y Petunia Dursley para
+          pasar
+          el verano allí. Un día, en la habitación de Harry aparece un ser conocido como «elfo doméstico» llamado Dobby,
+          quien le advierte que no debe asistir a su segundo curso del colegio puesto que «estará en peligro mortal»;
+          sin
+          embargo, Harry hace caso omiso a las palabras del elfo. Después de esto, Ron Weasley, y sus hermanos Fred y
+          George
+          llegan a su casa en un coche volador, escapando con Harry.</p>
       </div>
     </section>
     <section id="quiddich">
       <div>
-
+        <p>Tras el primer curso de Harry en Hogwarts, este regresa al hogar de sus tíos Vernon y Petunia Dursley para
+          pasar
+          el verano allí. Un día, en la habitación de Harry aparece un ser conocido como «elfo doméstico» llamado Dobby,
+          quien le advierte que no debe asistir a su segundo curso del colegio puesto que «estará en peligro mortal»;
+          sin
+          embargo, Harry hace caso omiso a las palabras del elfo. Después de esto, Ron Weasley, y sus hermanos Fred y
+          George
+          llegan a su casa en un coche volador, escapando con Harry.</p>
       </div>
     </section>
     <!-------------------- FOOTER ---------------------------->
-    <footer id="footer" class="p-5 row">
+    <footer id="footer" class="container-fluid row">
       <div class="col-sm-4">
         <h1>Autora de la web:</h1>
         <p>Cruz López Pérez<br>
@@ -255,12 +166,16 @@
         <div class="embed-responsive embed-responsive-16by9">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1743.3101468918073!2d-4.555426594989655!3d36.74068740245444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f1d06d8246c9%3A0xb6dccfba3e65a1f2!2sFP%20IES%20Campanillas%20PTA!5e0!3m2!1ses!2ses!4v1614624550113!5m2!1ses!2ses"
-            width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            width="800" height="400" style="border:0;" allowfullscreen="no" loading="lazy"></iframe>
         </div>
       </div>
     </footer>
   </div>
-
+  <!-- enlace a smooth scroll-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- enlace a js -->
+  <script src="javascripts/funciones.js"></script>
+  <!-- enlace al js de Boostrap -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
