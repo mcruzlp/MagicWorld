@@ -14,7 +14,7 @@
   <!-- enlace a estilo de bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles/estilo.css">
+  <link rel="stylesheet" href="../styles/estilo.css">
   <title>Mundo Mágico</title>
 </head>
 
@@ -84,36 +84,30 @@
       </div>
     </nav>
     <!-------------------- ZONA MUGGLE ----------------------------->
-    <section id="news">
-      <div>
-        <a class="twitter-timeline" data-theme="light"
-          href="https://twitter.com/wizardingworld?ref_src=twsrc%5Etfw">Tweets by
-          wizardingworld</a>
-      </div>
-    </section>
-    <section id="where">
-      <div>
-        <h6>Tiendas donde comprar merchandising</h6>
-        <a href="https://www.primark.com/es/harry-potter/c/harrypotter">Primark</a>
-        <a href="https://minalima.com/es/">House of MinaLima</a>
-      </div>
-    </section>
-    <section id="parks">
-      <div>
-        <h6>Lugares que no te puedes perder</h6>
-        <a href="https://www.wbstudiotour.co.uk/es/">The Making of Harry Potter</a>
-        <a
-          href="https://www.universalorlando.com/web/es/us/universal-orlando-resort/the-wizarding-world-of-harry-potter/hub">The
-          Wizarding World of Harry Potter</a>
-      </div>
-    </section>
-    <section id="chat">
-      <div>
-        <h6>Conoce a otros fans de la saga</h6>
-        <a href="https://hp-avada-kedavra.foroactivo.com/">HP Avada Kedavra</a>
-        <a href="http://www.forosharrypotter.com/">Centro de diálogo</a>
-        <a href="http://www.harrylatino.org/">Harry Latino</a>
-        <a href="https://harrypotter.fandom.com/es/wiki/HarryPotter_Wiki">HarryPotter_Wiki</a>
+    <section id="muggle">
+      <div class="row m-5">
+        <div id="news" class="col-3">
+          <a class="twitter-timeline" data-width="300" data-height="400" data-theme="dark"
+            href="https://twitter.com/wizardingworld?ref_src=twsrc%5Etfw">Tweets by wizardingworld</a>
+        </div>
+        <div id="where" class="col-3">
+          <h6>Tiendas donde comprar merchandising</h6>
+          <a href="https://www.primark.com/es/harry-potter/c/harrypotter" target="_blank">Primark</a><br>
+          <a href="https://minalima.com/es/" target="_blank">House of MinaLima</a>
+        </div>
+        <div id="parks" class="col-3">
+          <h6>Lugares que no te puedes perder</h6>
+          <a href="https://www.wbstudiotour.co.uk/es/" target="_blank">The Making of Harry Potter</a><br>
+          <a href="https://www.universalorlando.com/web/es/us/universal-orlando-resort/the-wizarding-world-of-harry-potter/hub"
+            target="_blank">The Wizarding World of Harry Potter</a>
+        </div>
+        <div id="chat" class="col-3">
+          <h6>Conoce a otros fans de la saga</h6>
+          <a href="https://hp-avada-kedavra.foroactivo.com/" target="_blank">HP Avada Kedavra</a><br>
+          <a href="http://www.forosharrypotter.com/" target="_blank">Centro de diálogo</a><br>
+          <a href="http://www.harrylatino.org/" target="_blank">Harry Latino</a><br>
+          <a href="https://harrypotter.fandom.com/es/wiki/HarryPotter_Wiki" target="_blank">HarryPotter_Wiki</a><br>
+        </div>
       </div>
     </section>
     <!-------------------- FOOTER ---------------------------->
@@ -142,8 +136,6 @@
   </div>
   <!-- enlace a js de twitter -->
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  <!-- enlace a smooth scroll-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- enlace a js -->
   <script src="js/javascript.js"></script>
   <!-- enlace al js de Boostrap -->

@@ -40,6 +40,10 @@
 }
 
 /******************* LAYOUT BÁSICO *************************/
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background-color: rgb(110, 81, 114);
 	font-family: body;
@@ -111,7 +115,9 @@ hr {
 }
 
 /********************* ZONA MUGGLE ************************/
-
+#muggle {
+	color: white;
+}
 #muggles img {
 	max-width: 100%;
 	height: auto;
@@ -144,6 +150,10 @@ hr {
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	white-space: nowrap;
+}
+
+#news {
+	overflow: scroll;
 }
 
 /*********************** FOOTER ***************************/
