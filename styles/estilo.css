@@ -33,7 +33,7 @@
 	position: right;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 900px) {
 	.navbar-toggler-icon {
 		display: none;
 	}
@@ -75,6 +75,7 @@ hr {
 	background-size: cover;
 	background-position: top center;
 	height: 100%;
+	margin: 0%;
 }
 
 #jumbotron-text {
@@ -109,21 +110,11 @@ hr {
 	color: rgb(68, 4, 77);
 }
 
-/*.card-columns {
-	@include media-breakpoint-only(lg) {
-		column-count: 4;
-	}
-	@include media-breakpoint-only(xl) {
-		column-count: 5;
-	}
-}*/
-
 /********************* ZONA MUGGLE ************************/
 
 #muggles img {
-	display: block;
-	height: 500px;
-	width: max-content;
+	max-width: 100%;
+	height: auto;
 }
 
 #muggles .overlay {
@@ -131,14 +122,14 @@ hr {
 	bottom: 0;
 	left: 100%;
 	right: 0;
-	background-color: rgb(68, 4, 77);
+	background-color: rgb(110, 81, 114);
 	overflow: hidden;
 	width: 0;
 	height: 100%;
 	transition: 0.5s ease;
 }
 
-#muggles .container:hover {
+#muggles .container:hover .overlay {
 	width: 100%;
 	left: 0;
 }
@@ -156,6 +147,9 @@ hr {
 }
 
 /*********************** FOOTER ***************************/
+hr {
+	margin-top: 0%;
+}
 
 footer {
 	font-family: titles;

@@ -17,8 +17,6 @@
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <!-- enlace a mi estilo -->
   <link rel="stylesheet" href="../styles/estilo.css">
-  <!-- enlace a js -->
-  <script src="../js/javascript.js"></script>
   <title>Mundo Mágico</title>
 </head>
 
@@ -43,42 +41,52 @@
           <li class="nav-item">
             <a class="nav-link" href="../index.html#history">Historia</a>
           </li>
-          <!-- Dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="../index.html#world" id="navbardrop" data-toggle="dropdown">
-              Mundo Mágico
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#schools">Escuelas de magia</a>
-              <a class="dropdown-item" href="#beast">Criaturas mágicas</a>
-              <a class="dropdown-item" href="#objects">Objetos mágicos</a>
-              <a class="dropdown-item" href="#charms">Hechizos y Pociones</a>
-              <a class="dropdown-item" href="#quiddich">Quiddich</a>
-            </div>
+          <!-- Dropdown mundo mágico -->
+          <li class="nav-item btn-group">
+            <a class="nav-link" href="../index.html#world">Mundo Mágico</button>
+              <a class="nav-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="world.html#hero">Mundo Mágico</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="world.html#beast" target="_blank">Criaturas mágicas</a>
+                  <a class="dropdown-item" href="world.html#objects" target="_blank">Objetos mágicos</a>
+                  <a class="dropdown-item" href="world.html#charms" target="_blank">Pociones, hechizos y
+                    encantamientos</a>
+                  <a class="dropdown-item" href="world.html#quiddich" target="_blank">Quiddich</a>
+                  <a class="dropdown-item" href="world.html#schools" target="_blank">Escuelas de magia</a>
+                </div>
           </li>
-          <!-- Dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="../index.html#muggles" id="navbardrop" data-toggle="dropdown">
-              Zona Muggle
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#news">Novedades</a>
-              <a class="dropdown-item" href="#where">Dónde comprar</a>
-              <a class="dropdown-item" href="#parks">Parques temáticos</a>
-              <a class="dropdown-item" href="#chat">Foro</a>
-            </div>
+          <!-- Dropdown zona muggle -->
+          <li class="nav-item btn-group">
+            <a class="nav-link" href="../index.html#muggles">Zona Muggle</button>
+              <a class="nav-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="muggle.html#hero">Zona Muggle</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="muggle.html#news" target="_blank">Novedades</a>
+                  <a class="dropdown-item" href="muggle.html#where" target="_blank">Dónde comprar</a>
+                  <a class="dropdown-item" href="muggle.html#parks" target="_blank">Parques temáticos</a>
+                  <a class="dropdown-item" href="muggle.html#chat" target="_blank">Foro</a>
+                </div>
           </li>
         </ul>
-        <form class="form-inline float-right">
+        <form class="form-inline">
           <div class="nav-item">
             <input class="form-control" type="search" placeholder="Diccionario Mágico">
-            <button class="btn my-2 my-sm-0" type="submit">Buscar</button>
+            <button class="btn my-2 my-sm-0" onclick="window.location.href='diccionario.html'" target="_blank"
+              type="button">Buscar</button>
           </div>
         </form>
       </div>
     </nav>
     <!-------------------- CONTACTA ---------------------------->
-    <form>
+    <form class="container m-5">
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="inputEmail4">Email</label>
@@ -143,58 +151,36 @@
         <div class="modal" id="myModal1">
           <div class="modal-dialog">
             <div class="modal-content">
-
               <!-- Modal Header -->
               <div class="modal-header">
                 <h1 class="modal-title">Política de privacidad</h1>
                 <button type="button" class="close" data-dismiss="modal">×</button>
               </div>
-
               <!-- Modal body -->
               <div class="modal-body">
                 <h3>Some text to enable scrolling..</h3>
                 <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                  ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit
-                  esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui
-                  officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut
-                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                  ut
-                  aliquip ex ea commodo consequat.</p>
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                  ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit
-                  esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui
-                  officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut
-                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                  ut
-                  aliquip ex ea commodo consequat.</p>
-
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                  ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit
-                  esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui
-                  officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut
-                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                  ut
-                  aliquip ex ea commodo consequat.</p>
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </div>
-
               <!-- Modal footer -->
               <div class="modal-footer">
                 <button type="button" class="btn" data-dismiss="modal">Close</button>
@@ -208,33 +194,28 @@
       <div class="modal" id="myModal2">
         <div class="modal-dialog">
           <div class="modal-content">
-
             <!-- Modal Header -->
             <div class="modal-header">
               <h1 class="modal-title">Formulario de contacto</h1>
               <button type="button" class="close" data-dismiss="modal">×</button>
             </div>
-
             <!-- Modal body -->
             <div class="modal-body">
               <h3>¡Gracias por contactar con nosotros!</h3>
               <p>Su consulta ha sido enviada.
             </div>
-
             <!-- Modal footer -->
             <div class="modal-footer">
               <button onclick="window.location.href='../index.html#hero'" type="button" class="btn"
                 data-dismiss="modal">Close</button>
             </div>
-
           </div>
         </div>
       </div>
     </form>
-
     <!-------------------- FOOTER ---------------------------->
     <hr>
-    <footer id="footer" class="p-5 row">
+    <footer id="footer" class="container row">
       <div class="col-sm-4">
         <h1>Autora de la web:</h1>
         <p>Cruz López Pérez<br>
@@ -249,7 +230,7 @@
       </div>
       <div class="col-sm-4">
         <h1>Dónde estamos:</h1>
-        <div class="embed-responsive embed-responsive-16by9">
+        <div class="embed-responsive embed-responsive-16by9 m-2">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1743.3101468918073!2d-4.555426594989655!3d36.74068740245444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f1d06d8246c9%3A0xb6dccfba3e65a1f2!2sFP%20IES%20Campanillas%20PTA!5e0!3m2!1ses!2ses!4v1614624550113!5m2!1ses!2ses"
             width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -257,7 +238,11 @@
       </div>
     </footer>
   </div>
-
+  <!-- enlace a smooth scroll-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- enlace a js -->
+  <script src="../js/javascript.js"></script>
+  <!-- enlace al js de Boostrap -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>

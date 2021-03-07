@@ -19,16 +19,16 @@
 </head>
 
 <body>
-  <div id="wrapper" class="container-fluid">
+  <div id="wrapper">
     <!-------------------- NAVBAR ------------------------------>
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
       <div class="navbar-collapse p-2" id="playlist">
         <!-- Reproductor de SoundCloud -->
         <iframe width="100%" height="100" scrolling="no" frameborder="no"
           src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1199295601&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true"></iframe>
       </div>
       <!--Botón de inicio-->
-      <a class="navbar-brand" href="#hero">Inicio</a>
+      <a class="navbar-brand" href="../index.html#hero">Inicio</a>
       <!--Botón hamburguesa-->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
@@ -37,76 +37,87 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" onclick=”window.location.href=’hp1stone.html'”>Historia</a>
+            <a class="nav-link" href="../index.html#history">Historia</a>
           </li>
-          <!-- Dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#world" id="navbardrop" data-toggle="dropdown">
-              Mundo Mágico
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#schools">Escuelas de magia</a>
-              <a class="dropdown-item" href="#beast">Criaturas mágicas</a>
-              <a class="dropdown-item" href="#objects">Objetos mágicos</a>
-              <a class="dropdown-item" href="#charms">Hechizos y Pociones</a>
-              <a class="dropdown-item" href="#quiddich">Quiddich</a>
-            </div>
+          <!-- Dropdown mundo mágico -->
+          <li class="nav-item btn-group">
+            <a class="nav-link" href="../index.html#world">Mundo Mágico</button>
+              <a class="nav-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="world.html#hero">Mundo Mágico</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="world.html#beast" target="_blank">Criaturas mágicas</a>
+                  <a class="dropdown-item" href="world.html#objects" target="_blank">Objetos mágicos</a>
+                  <a class="dropdown-item" href="world.html#charms" target="_blank">Pociones, hechizos y
+                    encantamientos</a>
+                  <a class="dropdown-item" href="world.html#quiddich" target="_blank">Quiddich</a>
+                  <a class="dropdown-item" href="world.html#schools" target="_blank">Escuelas de magia</a>
+                </div>
           </li>
-          <!-- Dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#muggles" id="navbardrop" data-toggle="dropdown">
-              Zona Muggle
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#news">Novedades</a>
-              <a class="dropdown-item" href="#where">Dónde comprar</a>
-              <a class="dropdown-item" href="#parks">Parques temáticos</a>
-              <a class="dropdown-item" href="#chat">Foro</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#footer">Contacto</a>
+          <!-- Dropdown zona muggle -->
+          <li class="nav-item btn-group">
+            <a class="nav-link" href="../index.html#muggles">Zona Muggle</button>
+              <a class="nav-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="muggle.html#hero">Zona Muggle</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="muggle.html#news" target="_blank">Novedades</a>
+                  <a class="dropdown-item" href="muggle.html#where" target="_blank">Dónde comprar</a>
+                  <a class="dropdown-item" href="muggle.html#parks" target="_blank">Parques temáticos</a>
+                  <a class="dropdown-item" href="muggle.html#chat" target="_blank">Foro</a>
+                </div>
           </li>
         </ul>
-        <form class="form-inline float-right">
+        <form class="form-inline">
           <div class="nav-item">
             <input class="form-control" type="search" placeholder="Diccionario Mágico">
-            <button class="btn my-2 my-sm-0" type="submit">Buscar</button>
+            <button class="btn my-2 my-sm-0" onclick="window.location.href='diccionario.html'" target="_blank"
+              type="button">Buscar</button>
           </div>
         </form>
       </div>
     </nav>
-    <!-------------------- INICIO / HERO ----------------------->
-    <section id="hero">
-      <div class="jumbotron">
-        <div id="jumbotron-text" class="p-5">
-          <h1 class="display-4">Bienvenid@ al mundo mágico de Harry Potter</h1>
-          <p class="lead">Esta es una página web no oficial creada por y para los fans de la saga.</p>
-          <hr class="my-4">
-          <p>Si quieres contarnos tu experiencia en la web o ves algún error, contácta con nosotros a través de este
-            formulario:</p>
-          <a class="btn btn-lg" href="#contacto.html`" role="button">Contacta</a>
-        </div>
-      </div>
-    </section>
     <!-------------------- ZONA MUGGLE ----------------------------->
     <section id="news">
+      <div>
+        <a class="twitter-timeline" data-theme="light"
+          href="https://twitter.com/wizardingworld?ref_src=twsrc%5Etfw">Tweets by
+          wizardingworld</a>
+      </div>
     </section>
     <section id="where">
-
+      <div>
+        <h6>Tiendas donde comprar merchandising</h6>
+        <a href="https://www.primark.com/es/harry-potter/c/harrypotter">Primark</a>
+        <a href="https://minalima.com/es/">House of MinaLima</a>
+      </div>
     </section>
     <section id="parks">
       <div>
-
+        <h6>Lugares que no te puedes perder</h6>
+        <a href="https://www.wbstudiotour.co.uk/es/">The Making of Harry Potter</a>
+        <a
+          href="https://www.universalorlando.com/web/es/us/universal-orlando-resort/the-wizarding-world-of-harry-potter/hub">The
+          Wizarding World of Harry Potter</a>
       </div>
     </section>
     <section id="chat">
       <div>
-
+        <h6>Conoce a otros fans de la saga</h6>
+        <a href="https://hp-avada-kedavra.foroactivo.com/">HP Avada Kedavra</a>
+        <a href="http://www.forosharrypotter.com/">Centro de diálogo</a>
+        <a href="http://www.harrylatino.org/">Harry Latino</a>
+        <a href="https://harrypotter.fandom.com/es/wiki/HarryPotter_Wiki">HarryPotter_Wiki</a>
       </div>
     </section>
-    <!-------------------- CONTACTO / FOOTER ---------------------------->
-    <footer id="footer" class="p-5 row">
+    <!-------------------- FOOTER ---------------------------->
+    <footer id="footer" class="container-fluid row">
       <div class="col-sm-4">
         <h1>Autora de la web:</h1>
         <p>Cruz López Pérez<br>
@@ -120,15 +131,22 @@
         <a href="https://www.linkedin.com/in/mcruzlp/" target="_blank" class="fa fa-linkedin"></a>
       </div>
       <div class="col-sm-4">
-        <h1>Contenido:</h1>
-        <a href="#hero">Inicio</a><br>
-        <a href="#history">Historia</a><br>
-        <a href="#world">Mundo Mágico</a><br>
-        <a href="#muggles">Zona Muggle</a><br>
+        <h1>Dónde estamos:</h1>
+        <div class="embed-responsive embed-responsive-16by9 m-5">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1743.3101468918073!2d-4.555426594989655!3d36.74068740245444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f1d06d8246c9%3A0xb6dccfba3e65a1f2!2sFP%20IES%20Campanillas%20PTA!5e0!3m2!1ses!2ses!4v1614624550113!5m2!1ses!2ses"
+            width="800" height="600" style="border:0;" allowfullscreen="no" loading="lazy"></iframe>
+        </div>
       </div>
     </footer>
   </div>
-
+  <!-- enlace a js de twitter -->
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <!-- enlace a smooth scroll-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- enlace a js -->
+  <script src="js/javascript.js"></script>
+  <!-- enlace al js de Boostrap -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
