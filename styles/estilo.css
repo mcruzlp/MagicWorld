@@ -33,6 +33,10 @@
 	position: right;
 }
 
+.dropdown:hover {
+	color: rgb(110, 81, 114);
+}
+
 @media screen and (min-width: 900px) {
 	.navbar-toggler-icon {
 		display: none;
