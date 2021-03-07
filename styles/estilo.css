@@ -33,7 +33,7 @@
 	position: right;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 900px) {
 	.navbar-toggler-icon {
 		display: none;
 	}
