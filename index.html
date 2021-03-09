@@ -42,21 +42,21 @@
           </li>
           <!-- Dropdown mundo mágico -->
           <li class="nav-item btn-group">
-            <a class="nav-link" href="#world">Mundo Mágico</button>
-              <a class="nav-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                <span class="sr-only">Toggle Dropdown</span>
-                </button>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="html/world.html" target="_blank">Mundo Mágico</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="html/world.html#beast" target="_blank">Criaturas mágicas</a>
-                  <a class="dropdown-item" href="html/world.html#objects" target="_blank">Objetos mágicos</a>
-                  <a class="dropdown-item" href="html/world.html#charms" target="_blank">Pociones, hechizos y
-                    encantamientos</a>
-                  <a class="dropdown-item" href="html/world.html#quiddich" target="_blank">Quiddich</a>
-                  <a class="dropdown-item" href="html/world.html#schools" target="_blank">Escuelas de magia</a>
-                </div>
+            <button class="nav-link" href="#world">Mundo Mágico</button>
+            <a class="nav-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <span class="sr-only">Toggle Dropdown</span>
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="html/world.html">Mundo Mágico</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="html/world.html#beast">Criaturas mágicas</a>
+              <a class="dropdown-item" href="html/world.html#objects">Objetos mágicos</a>
+              <a class="dropdown-item" href="html/world.html#charms">Pociones, hechizos y
+                encantamientos</a>
+              <a class="dropdown-item" href="html/world.html#quiddich">Quiddich</a>
+              <a class="dropdown-item" href="html/world.html#schools">Escuelas de magia</a>
+            </div>
           </li>
           <!-- Dropdown zona muggle -->
           <li class="nav-item btn-group">
@@ -64,22 +64,22 @@
               <a class="nav-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
                 aria-expanded="false">
                 <span class="sr-only">Toggle Dropdown</span>
-                </button>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="html/muggle.html" target="_blank">Zona Muggle</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="html/muggle.html#news" target="_blank">Novedades</a>
-                  <a class="dropdown-item" href="html/muggle.html#where" target="_blank">Dónde comprar</a>
-                  <a class="dropdown-item" href="html/muggle.html#parks" target="_blank">Parques temáticos</a>
-                  <a class="dropdown-item" href="html/muggle.html#chat" target="_blank">Foro</a>
-                </div>
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="html/muggle.html">Zona Muggle</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="html/muggle.html#news">Novedades</a>
+                <a class="dropdown-item" href="html/muggle.html#where">Dónde comprar</a>
+                <a class="dropdown-item" href="html/muggle.html#parks">Parques temáticos</a>
+                <a class="dropdown-item" href="html/muggle.html#chat">Foro</a>
+              </div>
           </li>
         </ul>
         <form class="form-inline">
           <div class="nav-item">
-            <input class="form-control" type="search" placeholder="Diccionario Mágico">
+            <!--<input class="form-control" type="search" placeholder="Diccionario Mágico">-->
             <button class="btn my-2 my-sm-0" onclick="window.location.href='html/diccionario.html'"
-              type="button">Buscar</button>
+              type="button">Diccionario Mágico</button>
           </div>
         </form>
       </div>
@@ -190,7 +190,8 @@
     <section id="world" class="p-2">
       <div class="row m-3">
         <div class="card-columns">
-          <div class="card text-white" role="button" formtarget="_blank" onclick="window.location.href='html/world.html#beast'">
+          <div class="card text-white" role="button" formtarget="_blank"
+            onclick="window.location.href='html/world.html#beast'">
             <img src="images/World/escarbato.gif" class="card-img" alt="beast">
             <div class="card-img-overlay">
               <h5 class="card-title">Criaturas
@@ -231,8 +232,7 @@
               </h5>
             </div>
           </div>
-          <div class="card" role="button"
-          onclick="window.location.href='html/world.html#schools'">
+          <div class="card" role="button" onclick="window.location.href='html/world.html#schools'">
             <img src="images/World/hq.jpg" class="card-img" alt="Escuelas">
           </div>
         </div>
